@@ -2,7 +2,7 @@ Source: organicmaps
 Section: x11
 Priority: optional
 Maintainer: Merlijn Wajer <merlijn@wizzup.org>
-Build-Depends:
+Build-Depends: debhelper (>= 10),
  cmake,
  ninja-build,
  libfreetype-dev,
