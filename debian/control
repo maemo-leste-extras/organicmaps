@@ -1,0 +1,33 @@
+Source: organicmaps
+Section: x11
+Priority: optional
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Build-Depends:
+ cmake,
+ ninja-build,
+ libfreetype-dev,
+ libicu-dev,
+ libstdc++-10-dev,
+ zlib1g-dev,
+ libminizip-dev,
+ qtbase5-dev,
+ libqt5svg5-dev,
+ libsqlite3-dev,
+Standards-Version: 4.3.0
+
+Package: organicmaps-qt
+Architecture: any
+Multi-arch: same
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${launcher:Depends},
+ libqt5core5a,
+ libfreetype6,
+ libicu67,
+ libstdc++6,
+ zlib1g,
+ libminizip1,
+ libsqlite3-0,
+Description: Organic Maps for Debian/Devuan
+
